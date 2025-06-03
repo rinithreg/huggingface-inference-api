@@ -19,6 +19,7 @@ uvicorn app.main:app --reload
 # Option 2: With Docker
 docker build -t hf-inference-api .
 docker run -p 8000:8000 hf-inference-api
+```
 
 ## 🧪 Send Parallel Requests
 Open client/send_requests.ipynb and run all cells. It will POST requests to the API endpoint and show response times.
