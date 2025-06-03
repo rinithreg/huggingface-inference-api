@@ -12,11 +12,11 @@ This project demonstrates how to serve any pre-trained HuggingFace model using a
 ## 🚀 Run the Server
 
 ```bash
-# Option 1: With Python locally
+# 🔹 Option 1: With Python locally
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 
-# Option 2: With Docker
+# 🔹 Option 2: With Docker
 docker build -t hf-inference-api .
 docker run -p 8000:8000 hf-inference-api
 ```
@@ -26,16 +26,18 @@ Open client/send_requests.ipynb and run all cells. It will POST requests to the 
 
 ## 🧠 Model Used
 This project uses distilbert-base-uncased-finetuned-sst-2-english, a lightweight sentiment analysis model. It was chosen for demo because:
-- It’s small and fast
-- Covers a well-understood NLP task (sentiment classification)
-- Works out-of-the-box with Hugging Face's pipeline
+- ⚡ It’s small and fast
+- 💬 It solves a common NLP task (sentiment classification)
+- ✅ It works out-of-the-box with Hugging Face's pipeline API
 
 ## 📦 Requirements
-Python 3.8+
-FastAPI
-Uvicorn
-Transformers
-Requests
+- Python 3.8+
+- FastAPI
+- Uvicorn
+- Transformers
+- Requests
 
 ## 📄 License
-MIT
+MIT License – feel free to use, share, and adapt. ⭐
+
+
